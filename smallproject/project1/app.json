@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/weather/weather",
+    "pages/video/video",
+    "pages/homepage/homepage",
+    "pages/entertainment/entertainment",
+    "pages/rili/rili",
+    "pages/phone/phone",
+    "pages/music/music",
+    "pages/music1/music1",
+    "pages/music2/music2",
+    "pages/music3/music3",
+    "pages/music4/music4",
+    "pages/rubbish/rubbish",
+    "pages/menu/menu",
+    "pages/menuitem/menuitem",
+    "pages/my/my",
+    "pages/joke/joke",
+    "pages/news/news",
+    "pages/newsitem/newsitem",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/scanview/scanview",
+    "pages/scanview1/scanview1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生活小助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9DACB7",
+    "selectedColor": "#EEB422",
+    "backgroundColor": "lightblue",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "首页",
+        "iconPath": "pages/images/homepagen.png",
+        "selectedIconPath": "pages/images/homepage.png"
+      },
+      {
+        "pagePath": "pages/entertainment/entertainment",
+        "text": "娱乐",
+        "iconPath": "pages/images/entertainmentn.png",
+        "selectedIconPath": "pages/images/entertainment.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/myn.png",
+        "selectedIconPath": "pages/images/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

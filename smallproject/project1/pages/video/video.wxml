@@ -1,0 +1,54 @@
+<!--pages/video/video.wxml-->
+<view class="baseview">
+
+  <view class="topview">
+    <block wx:for="{{videodatas}}">
+      <view class="topcellview {{currentselectvalue==index?'on':''}}" bindtap="clicktitle" data-value="{{index}}">{{item.name}}</view>
+    </block>
+  </view>
+
+  <!--视频-->
+  <view class="vview">
+    <video class="videoview" controls="controls" src="{{srcpath}}" autoplay="autoplay">
+    </video>
+  </view>
+
+  <swiper current="{{currentselectvalue}}" class="swiperview" bindchange="changeitem">
+    <block wx:for="{{videodatas}}">
+      <swiper-item>
+
+        <!--剧集-->
+        <view class="mainview">
+          <scroll-view class="scrollview" scroll-x="true">
+            <block wx:for="{{item.videopath}}">
+              <view class="cellview" bindtap="clickitem" data-value="{{item}}">
+                <view class="cellview1">第{{index+1}}集</view>
+              </view>
+            </block>
+          </scroll-view>
+        </view>
+
+
+        <!--信息简介-->
+        <view class="explainview">
+          <view class="information">
+            <view class="informationimg">
+              <image class="cimg" src="{{item.imgpath}}"></image>
+            </view>
+            <view class="informationtext">
+              <view class="inforcell">片名：{{item.name}}</view>
+              <view class="inforcell">地区：{{item.area}}</view>
+              <view class="inforcell">类型：{{item.type}}</view>
+              <view class="inforcell">年代：{{item.year}}</view>
+            </view>
+          </view>
+          <view class="explain">
+            <scroll-view class="sview" scroll-y="true">简介：{{item.introduction}}</scroll-view>
+          </view>
+        </view>
+
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>

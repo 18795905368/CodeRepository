@@ -1,0 +1,130 @@
+/* pages/homepage/homepage.wxss */
+.baseview{
+  width: 100%;
+  height: 100vh;
+}
+.swiperview{
+  width: 100%;
+  height: 30%;
+}
+.sview{
+  width: 100%;
+  height: 100%;
+}
+.itemview{
+  width: 100%;
+  height: 100%;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+}
+.swipertextview{
+  width: 100%;
+  height: 5%;
+}
+.tview{
+  font-family: 楷体;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+}
+
+.blankview{
+  width: 100%;
+  height: 4%;
+}
+
+.tipview{
+  font-family: 楷体;
+  font-size: 45rpx;
+  font-weight: bold;
+
+}
+
+.gridview{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.gridcellview{
+  width: 30%;
+  height: 40%;
+  margin: 5rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gridview1{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 16rpx;
+}
+.gridview2{
+  width: 70%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 30rpx;
+}
+.gridimgview{
+  width:100%;
+  height: 100%；
+}
+
+.pictureview{
+  width: 100%;
+  height: 30%;
+}
+.listview{
+  width: 100%;
+  height: 100%;
+
+}
+.listscroll{
+  width: 100%;
+  height: 100%;
+}
+.listcell{
+  width: 100%;
+  height: 20%;
+  border-bottom: 2rpx solid gainsboro;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.listimg{
+  width: 25%;
+  height: 80%;
+}
+.listtext{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listtitle{
+  width: 90%;
+  height: 75%;
+  font-family: 楷体;
+  display: flex;
+  align-items: center;
+}
+.listad{
+  width: 90%;
+  height: 25%;
+  font-family: 楷体;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,6 @@
+<!--pages/start/start.wxml-->
+<view class="baseview">
+<view class="tipview">欢迎使用生活小助手</view>
+<view class="tipview">正在加载,请稍后...</view>
+<view class="{{colors[color]}}">{{num}}</view>
+</view>

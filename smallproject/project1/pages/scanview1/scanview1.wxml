@@ -1,0 +1,2 @@
+<!--pages/scanview1/scanview1.wxml-->
+<web-view src="{{urldata}}"></web-view>

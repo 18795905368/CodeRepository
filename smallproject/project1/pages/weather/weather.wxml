@@ -1,0 +1,112 @@
+<!--pages/weather/weather.wxml-->
+<view class="baseview">
+
+  <!--搜索框-->
+  <view class="topview">
+    <view class="topview1">
+      <view class="itemview">
+        <image class="img" src="{{weather}}"></image>
+        <input type="text" class="inputview" placeholder="请输入城市名称" bindinput="getcityname"></input>
+        <icon type="search" size="22" color="gray" bindtap="search"></icon>
+      </view>
+    </view>
+  </view>
+
+  <block wx:if="{{flag}}">
+
+    <!--今日天气-->
+    <view class="todayview">
+      <view class="today">
+        <view class="tweather">
+          <view class="todayweather">今日天气</view>
+          <view class="tcell">城市:{{currentWeather.city}}</view>
+          <view class="tcell">日期:{{currentWeather.date_y}}</view>
+          <view class="tcell">星期:{{currentWeather.week}}</view>
+          <view class="tcell">今日温度:{{currentWeather.temperature}}</view>
+          <view class="tcell">今日天气:{{currentWeather.weather}}</view>
+          <view class="tcell">风向:{{currentWeather.wind}}</view>
+        </view>
+        <view wx:if="{{currentWeather.weather=='晴'}}" class="ticon">
+          <image class="cimg " src="{{qing}} "></image>
+        </view>
+        <view wx:if="{{currentWeather.weather=='多云'||currentWeather.weather=='多云转晴'||currentWeather.weather=='晴转多云'}}" class="ticon">
+          <image class="cimg " src="{{duoyun}} "></image>
+        </view>
+        <view wx:if="{{currentWeather.weather=='阴'}}" class="ticon">
+          <image class="cimg " src="{{yin}} "></image>
+        </view>
+        <view wx:if="{{currentWeather.weather=='小雨'||currentWeather.weather=='中雨'||currentWeather.weather=='大雨'}}" class="ticon">
+          <image class="cimg " src="{{yu}} "></image>
+        </view>
+      </view>
+    </view>
+
+    <!--未来天气-->
+    <view class="futureview">
+      <view class="future">未来天气</view>
+      <scroll-view class="scrollview" scroll-x="true">
+        <block wx:for="{{info}}">
+          <block wx:if="{{index>0}}">
+            <view class="futureweather">
+              <view class="lastcell">日期:{{item.date}}</view>
+              <view class="lastcell">星期:{{item.week}}</view>
+              <view class="lastcell">温度:{{item.temperature}}</view>
+              <view class="lastcell">
+                <view class="fweather">天气:{{item.weather}}</view>
+
+                <view wx:if="{{item.weather=='晴'}}" class="ficon">
+                  <image class="cimg " src="{{qing}} "></image>
+                </view>
+                <view wx:if="{{item.weather=='多云'||item.weather=='多云转晴'||item.weather=='晴转多云'}}" class="ficon">
+                  <image class="cimg " src="{{duoyun}} "></image>
+                </view>
+                <view wx:if="{{item.weather=='阴'}}" class="ficon">
+                  <image class="cimg " src="{{yin}} "></image>
+                </view>
+                <view wx:if="{{item.weather=='小雨'||item.weather=='中雨'||item.weather=='大雨'}}" class="ficon">
+                  <image class="cimg " src="{{yu}} "></image>
+                </view>
+              </view>
+              <view class="lastcell">风向:{{item.wind}}</view>
+            </view>
+          </block>
+        </block>
+      </scroll-view>
+    </view>
+
+    <!--指数推荐-->
+    <view class="index">
+      <view class="tuijian">指数推荐</view>
+      <scroll-view class="scrollview" scroll-x="true">
+        <view class="indexcell">
+          <view class="content">穿衣指数</view>
+          <view class="content"><image class="indeximg" src="{{chuanyi}}"></image></view>
+          <view class="content">{{currentWeather.dressing_index}}</view>
+        </view>
+        <view class="indexcell">
+          <view class="content">紫外线强度</view>
+          <view class="content"><image class="indeximg" src="{{sun}}"></image></view>
+          <view class="content">{{currentWeather.uv_index}}</view>
+        </view>
+        <view class="indexcell">
+          <view class="content">晨练指数</view>
+          <view class="content"><image class="indeximg" src="{{duanlian}}"></image></view>
+          <view class="content">{{currentWeather.exercise_index}}</view>
+        </view>
+        <view class="indexcell">
+          <view class="content">洗车指数</view>
+          <view class="content"><image class="indeximg" src="{{xiche}}"></image></view>
+          <view class="content">{{currentWeather.wash_index}}</view>
+        </view>
+        <view class="indexcell">
+          <view class="content">旅游指数</view>
+          <view class="content"><image class="indeximg" src="{{lvyou}}"></image></view>
+          <view class="content">{{currentWeather.travel_index}}</view>
+        </view>
+      </scroll-view>
+    </view>
+
+  </block>
+
+
+</view>

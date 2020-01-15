@@ -1,0 +1,37 @@
+<!--pages/scanview/scanview.wxml-->
+<view class="baseview">
+  <view class="topview">
+    <view class="itemview">
+      <view class="itview">
+        <image class="cimg" src="{{imgpath}}"></image>
+        <text>{{text}}</text>
+      </view>
+      <image class="scan" src="{{scanimg}}" bindtap="scancode"></image>
+    </view>
+  </view>
+  <block wx:if="{{flag}}">
+    <view class="mainview">
+      <view class="goodsitem">商品条形码:{{code}}</view>
+      <view class="goodsitem">商品名称:{{info.summary.name}}</view>
+      <view class="goodsitem">商品价格:{{info.summary.interval}}</view>
+    </view>
+    
+    <view class="shoplist" bindtap="purchase">立即购买</view>
+      <block wx:for="{{info.eshop}}">
+      <view class="shop">
+        <view class="shopname">超市:{{item.shopname}}</view>
+        <view class="price">价格:{{item.price}}</view>
+      </view>
+      </block>
+
+    <view class="shoplist">各大超市价格比较</view>
+    
+      <block wx:for="{{info.shop}}">
+      <view class="shop">
+        <view class="shopname">超市:{{item.shopname}}</view>
+        <view class="price">价格:{{item.price}}</view>
+        </view>
+      </block>
+    
+  </block>
+</view>

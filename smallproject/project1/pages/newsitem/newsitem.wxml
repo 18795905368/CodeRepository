@@ -1,0 +1,2 @@
+<!--pages/newsitem/newsitem.wxml-->
+<web-view src="{{urldatas}}"></web-view>

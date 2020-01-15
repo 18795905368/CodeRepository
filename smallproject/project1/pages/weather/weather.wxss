@@ -1,0 +1,161 @@
+/* pages/weather/weather.wxss */
+.baseview{
+  width: 100%;
+  height: 100vh;
+  
+}
+.topview{
+  width:100%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topview1{
+  width:96%;
+  height: 90%;
+  border-radius: 3%;
+  background-color: #B0C4DE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemview{
+  width: 90%;
+  height: 50%;
+  background-color: white;
+  border-radius: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img{
+  width: 10%;
+  height: 80%;
+}
+.inputview{
+  width: 80%;
+  height: 100%;
+}
+.todayview{
+  width: 100%;
+  height: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.today{
+  width: 96%;
+  height: 92%;
+  background-image: linear-gradient(to top right,#6495ED,skyblue);
+  border-radius: 3%;
+  display: flex;
+  align-items: center;
+}
+.tweather{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ticon{
+  width: 30%;
+  height: 50%;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+}
+.todayweather{
+  width: 100%;
+  height: 16%;
+  font-weight: bold;
+  text-justify: center;
+}
+.tcell{
+  width: 80%;
+  height: 14%;
+  font-family: 楷体;
+  text-justify: center;
+}
+
+.futureview{
+  width: 100%;
+  height: 30%;
+}
+.future{
+  width: 100%;
+  height: 15%;
+  font-weight: bold;
+  text-justify: center;
+}
+.scrollview{
+  width: 100%;
+  height: 85%;
+  display: flex;
+  white-space: nowrap;
+}
+.futureweather{
+  width: 48%;
+  height: 96%;
+  display: inline-block;
+  margin: 10rpx;
+  border-radius: 3%;
+  background-image: linear-gradient(to left bottom,#6495ED,skyblue)
+}
+.lastcell{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1rpx solid gray;
+  font-family: 楷体;
+  text-justify: center;
+  display: flex;
+}
+.fweather{
+  width: 80%;
+  height: 100%;
+}
+.ficon{
+  width: 20%;
+  height: 100%;
+}
+
+.index{
+  width: 100%;
+  height: 20%;
+}
+
+.tuijian{
+  width: 100;
+  height: 20%;
+  font-weight: bold;
+  text-justify: center;
+}
+.scrollview{
+  width: 100;
+  height: 80%;
+  display: flex;
+  white-space: nowrap;
+}
+.indexcell{
+  width: 30%;
+  height: 90%;
+  background-image: linear-gradient(to top right,skyblue,#6495ED);
+  border-radius: 3%;
+  margin: 10rpx;
+  display: inline-block;
+}
+.content{
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 楷体;
+}
+.indeximg{
+  width: 40%;
+  height: 100%;
+}

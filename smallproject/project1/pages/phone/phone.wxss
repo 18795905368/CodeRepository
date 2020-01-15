@@ -1,0 +1,68 @@
+/* pages/phone/phone.wxss */
+.baseview{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF5EE;
+}
+.topview{
+  width: 100%;
+  height: 10%;
+  /**background-color: skyblue;**/
+  border-bottom: 1rpx solid gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60rpx;
+  font-family: 楷体;
+  font-weight: bold;
+}
+.mainview{
+  widows: 10%;
+  height: 80%;
+  /**background-color: seashell;**/
+  border-bottom: 1rpx solid gainsboro;
+}
+.bottomview{
+  width: 100%;
+  height: 10%;
+  /**background-color: aliceblue;**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+}
+.sview{
+  width: 100%;
+  height: 100%;
+}
+.cellview{
+  widows: 100%;
+  height: 150rpx;
+  /**background-color:#F8F8FF;**/
+  margin: 5rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgview{
+  width: 100rpx;
+  height: 80rpx;
+}
+.nameview{
+  width: 30%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phoneview{
+  width: 50%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+}

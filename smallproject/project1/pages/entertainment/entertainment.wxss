@@ -1,0 +1,65 @@
+/* pages/entertainment/entertainment.wxss */
+.baseview{
+  width: 100%;
+  height: 100vh;
+  background-color: #E6E6FA;
+}
+.scrollview{
+  width: 100%;
+  height: 100%;
+}
+.swiperview{
+  width: 100%;
+  height: 30%;
+}
+.sview{
+  width: 100%;
+  height: 100%;
+}
+.itemview{
+  width: 100%;
+  height: 100%;
+}
+
+.blankview{
+  width: 100%;
+  height: 4%;
+}
+
+
+.cellview{
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1rpx solid gray;
+}
+
+.view1{
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.imgview{
+  width: 100%;
+  height: 70%;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+}
+.textview{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view2{
+  width: 75%;
+  height: 90%;
+}

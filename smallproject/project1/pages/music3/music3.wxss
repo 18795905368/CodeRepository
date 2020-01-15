@@ -1,0 +1,75 @@
+/* pages/music3/music3.wxss */
+.baseview{
+  width: 100%;
+  height: 100vh;
+}
+.mainview{
+  width: 100%;
+  height: 78%;
+}
+.topview{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1rpx solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.topimg{
+  width:25%;
+  height: 90%; 
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.toptext{
+  width: 60%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  font-family: 楷体;
+  font-size: 40rpx;
+  color: black;
+  font-weight: bold;
+}
+.scrollview{
+  width: 100%;
+  height: 100%;
+}
+.cellview{
+  width: 100%;
+  height: 15%;
+  margin: 5rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgview{
+  width: 20%;
+  height: 80%;
+}
+.nameview{
+  width: 30%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 楷体;
+  font-size: 40rpx;
+}
+.authorview{
+  width: 30%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 楷体;
+  font-size: 40rpx;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+}

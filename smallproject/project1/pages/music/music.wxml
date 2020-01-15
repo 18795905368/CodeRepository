@@ -1,0 +1,14 @@
+<!--pages/music/music.wxml-->
+<view class="baseview" style="background-image: url('{{bgimgpath}}')">
+  <block wx:for="{{listdatas}}">
+    <view class="cellview" bindtap="clicklist" data-value="{{item.navigatepath}}">
+      <view class="imgview">
+        <image class="cimg" src="{{item.imgpath}}"></image>
+      </view>
+      <view class="textview">
+        <view class="text1">{{item.name}}</view>
+        <view class="text2">{{item.number}}</view>
+      </view>
+    </view>
+  </block>
+</view>

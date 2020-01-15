@@ -1,0 +1,73 @@
+<!--pages/homepage/homepage.wxml-->
+<view class="baseview">
+  <scroll-view class="sview" scroll-y="true">
+
+    <!--轮播图-->
+    <view class="swiperview">
+      <swiper class="sview" autoplay="true" indicator-dots="true" indicator-active-color="black" interval="3000" duration="3000">
+        <block wx:for="{{swiperdatas}}">
+          <swiper-item>
+            <view class="itemview">
+              <image class="cimg" src="{{item}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <!--轮播广告-->
+    <view class="swipertextview">
+      <swiper class="sview" vertical="true" autoplay="true">
+        <block wx:for="{{textdatas}}">
+          <swiper-item>
+            <view class="tview">{{item}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+   
+   <view class="blankview"></view>
+   <view class="tipview">热门推荐</view>
+
+    <!--功能菜单宫格布局-->
+    <view class="gridview" style="background-image: url('{{bgimgpath}}')">
+      <block wx:for="{{griddatas}}">
+        <view class="gridcellview" bindtap="clickitem" data-path="{{item.navigatePath}}">
+          <view class="gridview1">
+            <view class="gridimgview">
+              <image class="cimg" src="{{item.gridimgpath}}"></image>
+            </view>
+          </view>
+          <view class="gridview2">{{item.gridtext}}</view>
+        </view>
+      </block>
+    </view>
+    
+
+    <view class="blankview"></view>
+
+    <view class="pictureview">
+      <image class="cimg" src="{{picturepath}}"></image>
+    </view>
+
+    <view class="blankview"></view>
+    <view class="tipview">社会热点</view>
+    <!--列表-->
+    <view class="listview">
+      
+          <block wx:for="{{articledatas}}">
+            <view class="listcell" bindtap="clicknewsitem" data-url="{{item.url}}">
+              <view class="listimg">
+                <image class="cimg" src="{{item.thumbnail_pic_s}}"></image>
+              </view>
+              <view class="listtext">
+              <view class="listtitle">{{item.title}}</view>
+              <view class="listad">{{item.author_name}}{{item.date}}</view>
+              </view>
+            </view>
+          </block>
+        
+    </view>
+
+  </scroll-view>
+</view>

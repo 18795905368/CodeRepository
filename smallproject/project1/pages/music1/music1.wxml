@@ -1,0 +1,33 @@
+<!--pages/music1/music1.wxml-->
+<view class="baseview" style="background-image: url('{{bgimgpath}}')">
+
+  <view class="mainview">
+    <scroll-view class="scrollview" scroll-y="true">
+
+      <!--顶部标题-->
+      <view class="topview">
+        <view class="topimg">
+          <image class="cimg" src="{{topviewdatas.imgpath}}"></image>
+        </view>
+        <view class="toptext">{{topviewdatas.name}}</view>
+      </view>
+
+      <!--音乐列表-->
+      <block wx:for="{{musicdatas}}">
+        <view class="cellview" bindtap="audioitemclick" data-value="{{item}}">
+        <view class="imgview">
+        <image class="cimg" src="{{nginx+item.poster}}"></image>
+        </view>
+        <view class="nameview">{{item.name}}</view>
+        <view class="authorview">{{item.author}}</view>
+        </view>
+      </block>
+
+    </scroll-view>
+  </view>
+
+  <!--底部audio组件-->
+    <audio poster="{{nginx+playpath.poster}}" name="{{playpath.name}}" author="{{playpath.author}}" src="{{nginx+playpath.src}}" controls="controls" bindtimeupdate="audioupdate" id="myaudio"></audio>
+    <slider max="100" min="0" step="1" activeColor="black" block-size="10" block-color="red" bindchange="sliderchange" bindchanging="sliderchanging" value="{{slidervalue}}"></slider>
+
+</view>

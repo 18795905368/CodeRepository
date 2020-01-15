@@ -1,0 +1,50 @@
+<!--pages/rubbish/rubbish.wxml-->
+<view class="baseview">
+
+  <view class="topview">
+    <view class="view1 {{currentselectvalue==0?'on':''}}" bindtap="clickitem" data-value="0">
+      <view class="textview">{{rubbishdatas[0].name}}</view>
+      <view class="imgview">
+        <image class="cimg" src="{{imgpath[0]}}"></image>
+      </view>
+    </view>
+    <view class="view1 {{currentselectvalue==1?'on':''}}" bindtap="clickitem" data-value="1">
+      <view class="textview">{{rubbishdatas[1].name}}</view>
+      <view class="imgview">
+        <image class="cimg" src="{{imgpath[1]}}"></image>
+      </view>
+    </view>
+    <view class="view1 {{currentselectvalue==2?'on':''}}" bindtap="clickitem" data-value="2">
+      <view class="textview">{{rubbishdatas[2].name}}</view>
+      <view class="imgview">
+        <image class="cimg" src="{{imgpath[2]}}"></image>
+      </view>
+    </view>
+    <view class="view1 {{currentselectvalue==3?'on':''}}" bindtap="clickitem" data-value="3">
+      <view class="textview">{{rubbishdatas[3].name}}</view>
+      <view class="imgview">
+        <image class="cimg" src="{{imgpath[3]}}"></image>
+      </view>
+    </view>
+  </view>
+
+
+  <swiper class="swiper" current="{{currentselectvalue}}" bindchange="changeitem">
+    <block wx:for="{{rubbishdatas}}">
+      <swiper-item>
+        <view class="explainview">{{item.explain}}</view>
+        <view class="commonview">
+          <view class="commontitle">{{item.name}}常见的有：</view>
+          <view class="common">{{item.common}}</view>
+        </view>
+        <view class="requireview">
+          <view class="requiretitle">{{item.name}}投放要求：</view>
+          <view class="require">{{item.require}}</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+
+</view>

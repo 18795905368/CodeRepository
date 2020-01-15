@@ -1,0 +1,71 @@
+/* pages/news/news.wxss */
+.baseview{
+  width: 100%;
+  height: 100vh;
+}
+.scrollview{
+  width: 100%;
+  height: 100%;
+}
+.sview{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cellview{
+  width: 92%;
+  height: 30%;
+  background-color:whitesmoke;
+  border-radius: 5%;
+  margin: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titleview{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  font-family: 楷体;
+}
+.adview{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authorview{
+  width: 30%;
+  height: 90%;
+  font-size: 28rpx;
+  font-family: 楷体;
+}
+.dateview{
+  width: 60%;
+  height: 90%;
+  font-size: 28rpx;
+  font-family: 楷体;
+}
+
+.imgview{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cellimg{
+  width: 32%;
+  height: 90%;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}

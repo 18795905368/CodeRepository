@@ -1,0 +1,27 @@
+<!--pages/menuitem/menuitem.wxml-->
+<view class="baseview">
+  <scroll-view class="scrollview" scroll-y="true">
+  <view class="sview">
+
+  <!--菜谱简介-->
+  <view class="topview">
+    <view class="topimg">
+      <image class="cimg" src="{{menuItemDatas.albums}}"></image>
+    </view>
+    <view class="toptitle">{{menuItemDatas.title}}</view>
+    <view class="topcontent">{{menuItemDatas.tags}}</view>
+  </view>
+  
+
+  <!--步骤-->
+  <view class="stepsview">
+  <block wx:for="{{steps}}">
+  <view class="stepstitle">{{item.step}}</view>
+  <view class="stepsimg"><image class="cimg1" src="{{item.img}}"></image></view>
+  </block>
+  </view>
+
+
+  </view>
+  </scroll-view>
+</view>

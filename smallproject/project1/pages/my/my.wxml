@@ -1,0 +1,25 @@
+<!--pages/my/my.wxml-->
+<view class="baseview" style="background-image: url('{{bgimgpath}}')">
+  
+  <view class="topview">
+    <view class="imgview">
+      <image class="cimg" src="{{imgpath}}"></image>
+    </view>
+    <view class="textview">大帅逼</view>
+  </view>
+
+  <view class="mainview">
+    <block wx:for="{{datas}}">
+      <view class="cellview" bindtap="clickitem">
+        <view class="view1">
+          <view class="cellimg">
+          <image class="cimg" src="{{item.img}}"></image>
+          </view>
+          <view class="celltext">{{item.text}}</view>
+        </view>
+        <view class="view2"><image class="cimg" src="{{item.tiaozhuan}}"></image></view>
+      </view>
+    </block>
+  </view>
+
+</view>

@@ -1,0 +1,36 @@
+<!--pages/news/news.wxml-->
+<view class="baseview">
+  <scroll-view class="scrollview" scroll-y="true">
+    <view class="sview">
+      <block wx:for="{{newsdatas}}">
+        <view class="cellview" bindtap="clicknewsitem" data-url="{{item.url}}">
+
+          <!--新闻标题-->
+          <view class="titleview">{{item.title}}</view>
+
+          
+
+          <!--新闻图片-->
+          <view class="imgview">
+            <view class="cellimg">
+              <image class="cimg" src="{{item.thumbnail_pic_s}}"></image>
+            </view>
+            <view class="cellimg">
+              <image class="cimg" src="{{item.thumbnail_pic_s02}}"></image>
+            </view>
+            <view class="cellimg">
+              <image class="cimg" src="{{item.thumbnail_pic_s03}}"></image>
+            </view>
+          </view>
+
+          <!--新闻作者和日期-->
+          <view class="adview">
+            <view class="authorview">{{item.author_name}}</view>
+            <view class="dateview">{{item.date}}</view>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,86 @@
+/* pages/rubbish/rubbish.wxss */
+.baseview{
+  width: 100%;
+  height: 100vh;
+}
+.topview{
+  width: 100%;
+  height: 20%;
+  background-color: #00FF7F;
+  display: flex;
+  justify-content: space-around;
+}
+.view1{
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textview{
+  width: 100%;
+  height: 30%;
+  font-family: 楷体;
+  font-size: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgview{
+  width: 100%;
+  height: 70%;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper{
+  width: 100%;
+  height: 80%;
+  background-color: seashell;
+}
+.explainview{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.commonview{
+  width: 100%;
+  height: 40%;
+}
+.commontitle{
+  width: 100%;
+  height: 20%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.common{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+.requireview{
+  width: 100%;
+  height: 40%;
+}
+.requiretitle{
+  width: 100%;
+  height: 20%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.require{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+.on{
+  border-bottom: 5rpx solid black;
+}

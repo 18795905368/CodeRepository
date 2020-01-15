@@ -1,0 +1,18 @@
+<!--pages/phone/phone.wxml-->
+<view class="baseview">
+  <view class="topview">通讯录</view>
+  <view class="mainview">
+    <scroll-view scroll-y="true" class="sview">
+      <block wx:for="{{students}}">
+        <view class="cellview" data-phone="{{item.phone}}" bindtap="callphone">
+          <view class="imgview">
+            <image class="cimg" src="{{item.imgpath}}"></image>
+          </view>
+          <view class="nameview">{{item.name}}</view>
+          <view class="phoneview">{{item.phone}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="bottomview">方块科技</view>
+</view>

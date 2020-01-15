@@ -1,0 +1,16 @@
+<!--pages/joke/joke.wxml-->
+<view class="baseview" style="background-image: url('{{bgimgpath}}')">
+
+  <scroll-view class="scrollview" scroll-y="true">
+    <view class="sview">
+    <view class="topview">笑话大全</view>
+      <block wx:for="{{jokedatas}}">
+        <view class="cellview">
+          <scroll-view class="scrollview" scroll-y="true">
+            {{item.content}}
+          </scroll-view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/entertainment/entertainment.wxml-->
+<view class="baseview">
+
+    <scroll-view class="scrollview" scroll-y="true">
+  
+  <!--轮播图-->
+    <view class="swiperview">
+      <swiper class="sview" autoplay="true" indicator-dots="true" indicator-active-color="black" interval="3000" duration="3000">
+        <block wx:for="{{swiperdatas}}">
+          <swiper-item>
+            <view class="itemview">
+              <image class="cimg" src="{{item}}"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+
+    <view class="blankview"></view>
+
+  <block wx:for="{{datas}}">
+    <view class="cellview" bindtap="clickitem" data-path="{{item.navigatepath}}" >
+      <view class="view1">
+        <view class="imgview">
+          <image class="cimg" src="{{item.src}}"></image>
+        </view>
+        <view class="textview">{{item.text}}</view>
+      </view>
+      <view class="view2">
+        <image class="cimg" src="{{item.imgpath}}"></image>
+      </view>
+    </view>
+  </block>
+
+  </scroll-view>
+</view>
